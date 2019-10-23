@@ -9,22 +9,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
       
-      .col {
+      .col, 
+      [class*=col- ] {
+        background: crimson;
         border: 1px solid white;
-      }
-
-      .row {
-        height: 80px;
+        height: 90px;
+        color: white;
       }
 
     </style>
-    <title>Reto2</title>
+    <title>Reto3</title>
   </head>
   <body>
-    <div class="container" style="background: forestgreen;">
+    <div class="container">
       <div class="row">
-        <div class="col">
-          1
+        <div class="col-md-6 offset-md-6">
+          Fila 1/ Col 1
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2 col-8 offset-0">
+          Fila 2/ Col 1
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 offset-md-0 offset-9">
+          Fila 3/ Col 1
         </div>
       </div>
     </div>
