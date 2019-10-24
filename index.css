@@ -2,6 +2,17 @@
   color: #97c93e !important;
 }
 
+.btn-platzi {
+  background-color: #97c93e;
+  color: white !important;
+}
+
+/* efecto hover en el botón */
+
+.btn-platzi:hover {
+  background-color: #82ad36;
+}
+
 #header img {
   width: 80px;
 }
