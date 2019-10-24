@@ -23,16 +23,22 @@
   <body>
     <div class="container">
       <div class="row">
+      <!-- En este caso la primera fila ocupará 6 columnas en tamaño mediano, y empezará a la mitad (offset 6), 
+      como no hay valor en small ocupa todo el espacio y se recorre a al izquierda -->
         <div class="col-md-6 offset-md-6">
           Fila 1/ Col 1
         </div>
       </div>
       <div class="row">
+      <!-- En este casi, fila mide 8 coumnas en mediano, y empieza en donde la columna 2, 
+      el offset 0 la acomoda al principio en pantallas pequeñas -->
         <div class="col-md-8 offset-md-2 col-8 offset-0">
           Fila 2/ Col 1
         </div>
       </div>
       <div class="row">
+      <!-- La fila mide 3 columnas y empieza en la posición 0 (offset) de pantalla mediana en adelante, 
+      se moverá a donde empieza la columna 9 posicionandola en las ultimas 3 columnas 10,11,12. -->
         <div class="col-md-3 offset-md-0 offset-9">
           Fila 3/ Col 1
         </div>
