@@ -11,11 +11,18 @@
 
     <title>Platzi Conf Hawaii</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="57">
+  
+  <!-- data-spy -- sirve para que el scroll ilumine las secciones de nuestro navbar
+  date-target -- indica la navbar que se está refiriendo en nuestro index en este caso "navbar" se usa numeral
+  data-offset -- sirve para que no haya offset al momento de hacer scroll debido al espacio que ocupar el navbar en este caso se especifico 57px al momento de medir el navbar con el inspector -->
+    <!-- <body data-spy="scroll" data-target="#navbar" data-offset="57"> -->
+
     
     <!-- HEADER -->
 
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- sticky-top sirve para dejar la barra de navegación siempre arriba -->
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <!-- En este caso el navbar-dark y bg dark cambian el color de nuestro navbar -->
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -25,19 +32,19 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">La conferencia</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#main">La conferencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Los oradores</a>
+                <a class="nav-link" href="#speakers">Los oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">El lugar y la fecha</a>
+                <a class="nav-link" href="#place-time">El lugar y la fecha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Conviértete en orador</a>
+                <a class="nav-link" href="#conviertete-en-orador">Conviértete en orador</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-platzi" href="#">Comprar tickets</a>
@@ -49,7 +56,9 @@
 
     <!-- HEADER ENDS -->
 
+    
     <!-- MAIN -->
+    
     <main id="main">
       <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
           <div class="carousel-inner">
@@ -84,6 +93,7 @@
             </div>
           </div>
       </div>
+    
     </main>
     <!-- MAIN ENDS -->
 
